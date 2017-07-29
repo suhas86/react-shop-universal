@@ -39,7 +39,7 @@ export function cartReducers(state = { cart: [] }, action) {
 }
 
 
-//Calculate Totals
+//Calculate Totals 
 export function totals(payloadArr) {
     const totalAmount = payloadArr.map((cartArr) => {
         return cartArr.price * cartArr.quantity;
